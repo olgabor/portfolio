@@ -7,7 +7,6 @@
 }
 
 html, body{
- 
     font-family: 'Noto Serif', serif;
     padding: 10px;
     margin: 0 auto;
@@ -179,7 +178,20 @@ img{
 }
 
 @media screen and (max-width: 800px){
-    .container{
+    .greeting{
+        width:95%
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px));
+	    /* grid-template-columns: 1fr; */
+	    grid-template-areas: 
+		'nav'
+        'image'
+        'about' 
+	;
+    }
+}
+@media screen and (max-width: 320px){
+    .greeting{
         display: grid;
 	    grid-template-columns: 1fr;
 	    grid-template-areas: 
@@ -187,5 +199,18 @@ img{
         'image'
         'about' 
 	;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .show-work {
+        display: grid;
+	    grid-template-columns: 1fr;
+	    grid-template-areas: 
+		'header'
+        'p1'
+        'p2'
+        'p3'
+        'social'   
     }
 }
