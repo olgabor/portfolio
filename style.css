@@ -179,15 +179,14 @@ img{
 
 @media screen and (max-width: 800px){
     .greeting{
-        width:95%
+        width:95%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px));
 	    /* grid-template-columns: 1fr; */
 	    grid-template-areas: 
-		'nav'
-        'image'
-        'about' 
-	;
+		    'nav'
+            'image'
+            'about' ;
     }
 }
 @media screen and (max-width: 320px){
