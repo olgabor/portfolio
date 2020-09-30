@@ -171,8 +171,8 @@ img{
     padding: 10px;
 }
 .social img{
-    height: 50px;
-    width: auto;
+    height: 5%;
+    width: 7%;
 }
 @media screen and (max-width: 1200px){
     .container{
