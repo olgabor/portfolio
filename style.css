@@ -50,14 +50,15 @@ ul{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px));
     border-radius: 5px;
-    box-shadow: 10px 11px 51px 0px rgba(75,81,86,1)
+    /* box-shadow: 10px 11px 51px 0px rgba(75,81,86,1); */
+    position: absolute
 }
 
 .greeting{
     min-height: 20em;
     display: grid;
     align-content: center;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: .5fr 1fr;
 	grid-template-areas: 
 		'nav nav'
         'image about'
@@ -79,7 +80,7 @@ ul{
 .photo{
     grid-area: image;
     padding-top:50px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     
 }
 
@@ -87,6 +88,10 @@ ul{
     grid-area: about;
     padding-top:50px;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
     
 }
 
@@ -99,8 +104,8 @@ ul{
 img{
     display: block;
     margin: 0 auto;
-    height: 20em;
-    width: 20em;
+    height: 20em; 
+    max-width: 80%;
     object-fit: cover;
     /* border: 1px solid black; */
     /* box-shadow: 10px 11px 51px 0px rgba(75,81,86,1) */
@@ -117,12 +122,10 @@ img{
 
 .show-work{
     min-height: 20em;
-    background-color: olivedrab;
-
     display: grid;
     align-content: center;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas: 
+    grid-template-areas: 
 		'header header header '
         'p1 p2 p3'
         'social social social'
@@ -173,7 +176,8 @@ img{
 }
 @media screen and (max-width: 1200px){
     .container{
-        width:95%
+        width:95%; 
+        margin: auto; 
     }
 }
 
@@ -181,8 +185,9 @@ img{
     .greeting{
         width:95%;
         display: grid;
+        
         grid-template-columns: repeat(auto-fit, minmax(320px));
-	    /* grid-template-columns: 1fr; */
+	    grid-template-columns: 1fr;
 	    grid-template-areas: 
 		    'nav'
             'image'
@@ -201,8 +206,20 @@ img{
     }
 }
 
-
 @media screen and (max-width: 800px){
+    .show-work {
+        max-width: 95%;
+        display: grid;
+	    grid-template-columns: 1fr;
+	    grid-template-areas: 
+		'header'
+        'p1'
+        'p2'
+        'p3'
+        'social'   
+    }
+}
+@media screen and (max-width: 320px){
     .show-work {
         display: grid;
 	    grid-template-columns: 1fr;
@@ -214,4 +231,5 @@ img{
         'social'   
     }
 }
+
 
