@@ -7,12 +7,16 @@
 }
 
 html, body{
-    font-family: 'Noto Serif', serif;
+    font-family: 'Raleway', sans-serif;
     padding: 10px;
     margin: 0 auto;
     background-color: var( --mainColor);
     height:100%;
     min-height:100%; 
+}
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
 }
 h1, h2{
     text-align: center;
@@ -23,7 +27,8 @@ h4{
 }
 
 p{
-    color: var(--mainText); 
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 a{
@@ -33,12 +38,13 @@ a{
 }
 
 a:hover{
-    color:  #003366;
+    color:  #0099FF;
 }
 
 ul{
     list-style: none;
 }
+
 
 .container{
     width: 80%;
@@ -56,13 +62,15 @@ ul{
 
 .greeting{
     min-height: 20em;
+    /* width: 50em; */
+    margin: auto;
     display: grid;
     align-items: center;
-	grid-template-columns: .5fr 1fr;
+	grid-template-columns:  1fr 1fr;
 	grid-template-areas: 
-		'nav nav'
-        'portrait  about'
-        'technologies technologies'
+        'nav nav nav'
+        'portrait  about about'
+        'technologies technologies technologies'
     ;
     /* gap: 10px; */
     /* box-shadow: 10px 11px 51px 0px rgba(75,81,86,1) */
@@ -157,7 +165,7 @@ ul{
     justify-content: space-evenly;
     flex-wrap: wrap; 
     align-items: center;
-    margin: 4%;
+    margin: 0;
     padding: 5px;
     padding-bottom: 5px;
 }
@@ -168,10 +176,7 @@ ul{
     border-radius: 6px;
     box-shadow: 1px 1px 5px 1px rgba(75,81,86,1); 
 }
-img:hover {
-    -webkit-transform:scale(1); /* or some other value */
-    transform:scale(1.2);
-}
+
 .p-summary{
     max-width: 50%;
 }
@@ -197,20 +202,50 @@ img{
     /* height: 80%; 
     width: 80%; */
 }
+
+.contact {
+    padding: 55px 20px;
+    background: #FED0D1;
+    color: #F34A4E;
+}
 .social{
     grid-area: social;
     background-color: var( --mainColor);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     margin: 0%;
     padding: 5px;
     padding-bottom: 5px;
+    background: #FED0D1;
+    color: #F34A4E;
 }
 #social img{
-    height: 50px;
+    height: 30px;
     width: auto;
     margin: 5%;
+}
+
+.social a{
+    display: -webkit-inline-box;
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    background: #FFF;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.social li {
+    display: inline-block;
+    margin: 1em 0.5em;
+    vertical-align: middle;
 }
 .technologies img{
     height: 4em;
@@ -221,7 +256,7 @@ img{
 }
 .photo img{
     height: auto; 
-    width: 75%;
+    width: 40%;
     border-radius: 0px;
     box-shadow: 0px 0px 0px 0px rgba(75,81,86,1); 
 }
@@ -242,6 +277,7 @@ img{
     .greeting{
         width:95%;
         display: grid;
+        margin: auto;
         grid-template-columns: repeat(auto-fit, minmax(320px));
 	    grid-template-columns: 1fr;
 	    grid-template-areas: 
@@ -256,6 +292,7 @@ img{
     .greeting{
         display: grid;
         width:95%;
+        margin: auto;
 	    grid-template-columns: 1fr;
 	    grid-template-areas: 
 		'nav'
@@ -269,6 +306,7 @@ img{
 @media screen and (max-width: 800px){
     .show-work {
         max-width: 95%;
+        margin: auto;
         display: grid;
 	    grid-template-columns: 1fr;
 	    grid-template-areas: 
@@ -282,6 +320,7 @@ img{
 @media screen and (max-width: 320px){
     .show-work {
         display: grid;
+        margin: auto;
         width:95%;
 	    grid-template-columns: 1fr;
 	    grid-template-areas: 
