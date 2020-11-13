@@ -14,136 +14,121 @@
        <div class='greeting'> 
        
         <div class='navigation' > 
-        <div class='about'> 
-            <a href="#about"> About </a> 
-        </div>
+        <!-- <div class='about'> 
+            <a href="#about"> ABOUT </a> 
+        </div> -->
         <div class='projects'>
-            <a href="#projects"> Projects </a> 
+            <a href="#projects"> PROJECTS </a> 
         </div> 
         <div class='contact'>
-            <a href="#contact"> Contact </a> 
+            <a href="#contact"> CONTACT </a> 
         </div>
         <div>
-             <a target='_blank' href="images/Olga_Borysovska_resume.pdf"> Resume </a> 
+             <a target='_blank' href="images/SE_Resume_OlgaBorysovska.pdf"> RESUME </a> 
         </div>
+        <div class='email'> 
+            <a href="mailto:olgaborysovska@gmail.com"> EMAIL ME </a>
+        </div> 
     </div> 
         <div class='photo'> 
-             <img src="images/picture.jpg"  alt=""> 
+             <img class="portrait" src="images/portrait.jpg"  alt="portrait" > 
         </div> 
 
        <div class='skills' id='about'>  
         <div class='header'>
             <h1> Hi, I`m Olga! Full stack software engineer based in Bay Area. </h1> 
         </div>
-          <p> I enjoy building software and things for the internet. Getting inspired by solving problems with writing code. </p>
-
-        <h4> TOP EXPERTISE </h4>
-        <div class='technologies'>
-            <ul>
-                <li> Python </li>
-                <li> Flask </li>
-                <li> Javascript </li>
-                <li> Express </li>
-               
-            </ul>
-            <ul>
-                <li> React </li>
-                <li> MongoDB  </li>
-                <li> Postgress </li>
-                <li> Heroku </li>
-    
-            </ul>
+          <p> I enjoy building software and things for the internet. I have made the transition from QA and became a developer to expand my skills. As a software engineer with a tasing mindset I bring the strive to perfection to every project. 
+              Getting inspired by solving problems with writing code. </p>
+          <!-- <div id="social"> 
+            <a href="mailto:olgaborysovska@gmail.com"> <img src="images/gmail.svg"> </a>
+            </div>  -->
+          <a target='_blank' href="images/SE_Resume_OlgaBorysovska.pdf"> Check out my Resume </a>   
         </div>
-     </div>
-  </div>  
-
- 
+        <div class='technologies'>
+            <h2> TOP EXPERTISE </h2> 
+            <div class="stack"> 
+                <div> <img src="images/python.svg" alt="python">  </div>
+                <div> <img src="images/flask.png" alt="flask"> </div>
+                <div> <img src="images/javascript.svg" alt="javascript"> </div>
+                <div> <img src="images/express.jpeg" alt="express-js"> </div>
+                <div> <img src="images/node.png" alt="node"></div> 
+                <div> <img src="images/react.png" alt="react"> </div>
+                <div> <img src="images/html.png" alt="html"></div>
+                <div> <img src="images/mongo-db.png" alt="mongo-db"></div>
+                <div> <img src="images/postgresql.png" alt="postgresql"></div>
+                <div> <img src="images/heroku.png" alt="heroku"></div> 
+            </div>
+        </div>
+    </div>  
     </section> 
 
-    <section class='section-2'>
-  <!-- <div class='container'> -->
-            <div class='show-work'>  
-               
+    <section class='section-2'> 
+
+            <div class='show-work'>
                <div class='p-header' id='projects'> 
-                    <h2> Some of my projects </h2>
+                    <h2> SOME OF MY PROJECTS </h2>
              </div> 
-           
-        <div class='p1'> 
-            <img src="images/closer.png">
-            <h5 class='p-name'> 'Closer' </h5>
-            <div class='p-summary'> 
-                <p > Closer is a productivity app where you can manage project productivity by creating, updating and deleting activities and their statuses with due dates. </p>
-                <p> 
-                    Python,
-                    Flask,
-                    PostgreSQL,
-                    SQLAlchemy,
-                    Bootstrap,
-                    CSS, 
-                    HTML
-                 </p> 
+
+        <div class='p1' id='project'> 
+           <div>  <img src="images/closer.png" class="project-img"> 
+        </div> 
+           <div class='p-summary'>  
+            <h3 class='p-name'> Closer</h3>
+            <div> 
+                <p> Productivity app to manage project activities. Users can create accounts and manage the project by assigning statuses to current projects and tasks. Application is built with Python, Flask framework, Bootstrap, SQLAlchemy and PostgreSQL database. </p>
+
                 </div> 
-                <div class='p-source'> 
+                <div class='p-source' id="social"> 
                 <a href="https://github.com/olgabor/closer">  <img src="images/GitHub-Mark-64px.png">  </a> 
                 <a href="https://closer-sei.herokuapp.com/"> Visit </a> 
             </div>
         </div>
+     </div>
             
-        <div class='p2'>
-            <img  src="images/olyssa.png">
-            <h5 class='p-name'> 'Olyssa' </h5>
-            <div class='p-summary'> 
-            <p > Olyssa is a travel app which holds the collections of trips and sightseeings associated with a particular coordinates on the map. </p>
-            <p>  
-                Javascript, 
-                Express, 
-                Node.js, 
-                Mongoose, 
-                MongoDB, 
-                Google Maps API, 
-                Bootstrap, 
-                CSS, 
-                HTML 
-             </p> 
+        <div class='p2' id='project'>
+            <div> <img src="images/olyssa.png" class="project-img">
             </div> 
-            <div class='p-source'> 
+           <div class='p-summary'>  
+            <h3 class='p-name'> Olyssa </h3>
+            <div> 
+            <p>  Travel app which holds collection of trips and sightseeings associated with coordinates. Users are enabled to create accounts and hold their own travel collections. Developed with MERN stack, NodeJS, Express, Mongodb, Mongoose, JavaScript, HTML, CSS, Bootstrap, Google Maps API and Places API. </p>
+            </div> 
+            <div class='p-source' id="social"> 
             <a id='git' href="https://github.com/sassymcnugget/Olyssa">  <img src="images/GitHub-Mark-64px.png"> </a> 
-            <a href="https://fierce-hamlet-84545.herokuapp.com/trips/"> Visit </a> 
+            <a href="https://fierce-hamlet-84545.herokuapp.com/trips/"> <img src="images/arrow-up-right.svg" alt=""> </a> 
         </div>
+     </div>
     </div>
-
-        <div class='p3'> 
-            <img  src="images/browser-game.png"> 
-            <h5 class='p-name'> 'How do you like them apples?' </h5>
-            <div class='p-summary'> 
-            <p > Web Browser memory game will train the brain to pick pairs of apple.
-                Click on random cell and game starts immediately. </p>
-            <p>  Javascript,
-                 CSS,
-                 HTML  
-            </p> 
+        <div class='p3' id='project'> 
+            <div> <img src="images/browser-game.png" class="project-img">  
+            </div>
+          <div class='p-summary'> 
+            <h3 class='p-name'> How do you like them apples? </h3>
+            <div> 
+            <p> Web browser memory game will train the brain to pick a pair of apples. Start the game by clicking on any image and increase the level of difficulty by guessing more apples each level. Built with JavaScript, CSS, HTML.</p>
         </div> 
-        <div class='p-source'> 
+        <div class='p-source' id="social"> 
             <a href="https://github.com/olgabor/Browser-Game"> <img src="images/GitHub-Mark-64px.png"> </a> 
             <a href="https://olgabor.github.io/Browser-Game/"> Play </a> 
         </div>
-        </div>
-    </div>
+     </div>
+  </div>
 
+</div>
 
         <div class="social" id='contact'> 
-            <div> 
-                <h3> Connect </h3> 
+            <div id="social"> 
+            <a href="mailto:olgaborysovska@gmail.com"> <img src="images/gmail.svg"> </a>
             </div> 
-            <div > 
+            <div id="social"> 
             <a href="https://github.com/olgabor/">  <img src="images/GitHub-Mark-64px.png"> </a> 
-            <a href="https://www.linkedin.com/in/olga-borysovska/">  <img src="images/Linkedin-Logo-2003–2011.png"> </a> 
+            </div> 
+            <div id="social"> 
+            <a href="https://www.linkedin.com/in/olga-borysovska/">  <img src="images/LinkedIn.png"> </a> 
             </div>
         </div> 
     </section>
-
-   
-    
 </div>
    
 </body>
