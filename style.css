@@ -13,6 +13,9 @@ html, body{
     background-color: var( --mainColor);
     height:100%;
     min-height:100%; 
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
 }
 html, body, ul, li {
     margin: 0;
@@ -45,7 +48,6 @@ ul{
     list-style: none;
 }
 
-
 .container{
     width: 80%;
     /* height: 100%; */
@@ -66,7 +68,7 @@ ul{
     margin: auto;
     display: grid;
     align-items: center;
-	grid-template-columns:  1fr 1fr;
+	grid-template-columns:  1fr 1fr 1fr;
 	grid-template-areas: 
         'nav nav nav'
         'portrait  about about'
@@ -91,7 +93,14 @@ ul{
     padding-top: 50px;
     text-align: center;
 }
-
+#about a{
+    background-color: red;
+    color: white;
+    padding: .5em .5em;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    border-radius: 3%;
+}
 .skills{
     grid-area: about;
     padding-top:50px;
@@ -144,6 +153,7 @@ ul{
         'p3 p3 p3'
         'social social social'
     ;
+    padding: 1em;
     /* box-shadow: 10px 11px 51px 0px rgba(75,81,86,1); */
     /* background-color: var(--secondaryColor); */
 }
@@ -204,9 +214,9 @@ img{
 }
 
 .contact {
-    padding: 55px 20px;
-    background: #FED0D1;
-    color: #F34A4E;
+    padding: 15px 20px;
+    background:  #e3e3e4;
+    color:  #e3e3e4;
 }
 .social{
     grid-area: social;
@@ -217,8 +227,8 @@ img{
     margin: 0%;
     padding: 5px;
     padding-bottom: 5px;
-    background: #FED0D1;
-    color: #F34A4E;
+    background: #e3e3e4;;
+    color:  #e3e3e4;
 }
 #social img{
     height: 30px;
@@ -256,7 +266,7 @@ img{
 }
 .photo img{
     height: auto; 
-    width: 40%;
+    width: 60%;
     border-radius: 0px;
     box-shadow: 0px 0px 0px 0px rgba(75,81,86,1); 
 }
