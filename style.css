@@ -173,7 +173,6 @@ img:hover {
     -webkit-transform:scale(1); /* or some other value */
     transform:scale(1.2);
 }
-
 .p-summary{
     max-width: 50%;
 }
@@ -234,7 +233,12 @@ img{
         margin: auto; 
     }
 }
-
+@media screen and (max-width: 320px){
+    .container{
+        width:95%; 
+        margin: auto; 
+    }
+}
 @media screen and (max-width: 800px){
     .greeting{
         width:95%;
