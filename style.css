@@ -37,7 +37,7 @@ p{
 a{
     text-decoration: none;
     color: var(--secondaryText);
-    font-size: 20px;
+
 }
 
 a:hover{
@@ -93,14 +93,7 @@ ul{
     padding-top: 50px;
     text-align: center;
 }
-#about a{
-    background-color: red;
-    color: white;
-    padding: .5em .5em;
-    text-decoration: none;
-    /* text-transform: uppercase; */
-    border-radius: 3%;
-}
+
 .skills{
     grid-area: about;
     padding-top:50px;
@@ -134,7 +127,7 @@ ul{
     flex-wrap: wrap;
     margin: 1%;
     /* padding: 35px; */
-    padding-bottom: 35px;
+    /* padding-bottom: 35px; */
     background-color: var( --mainColor);
     width: 40em;
     /* border-radius: 6px;
@@ -215,8 +208,8 @@ img{
 
 .contact {
     padding: 15px 20px;
-    background:  #e3e3e4;
-    color:  #e3e3e4;
+    background: #DBF3FA;
+    /* color:  #e3e3e4; */
 }
 .social{
     grid-area: social;
@@ -227,7 +220,7 @@ img{
     margin: 0%;
     padding: 5px;
     padding-bottom: 5px;
-    background: #e3e3e4;;
+    background: #DBF3FA;
     color:  #e3e3e4;
 }
 #social img{
