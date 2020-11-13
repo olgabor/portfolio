@@ -255,6 +255,7 @@ img{
 @media screen and (max-width: 320px){
     .greeting{
         display: grid;
+        width:95%;
 	    grid-template-columns: 1fr;
 	    grid-template-areas: 
 		'nav'
@@ -281,6 +282,7 @@ img{
 @media screen and (max-width: 320px){
     .show-work {
         display: grid;
+        width:95%;
 	    grid-template-columns: 1fr;
 	    grid-template-areas: 
 		'header'
