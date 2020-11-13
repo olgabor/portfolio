@@ -270,7 +270,7 @@ img{
         margin: auto; 
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (min-width: 320px){
     .container{
         width:95%; 
         margin: auto; 
