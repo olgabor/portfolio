@@ -27,11 +27,13 @@ h1, h2{
 }
 h4{
     color: var(--secondaryText);
+    margin: auto;
 }
 
 p{
     margin-top: 0;
     margin-bottom: 1rem;
+    margin: auto;
 }
 
 a{
@@ -102,8 +104,8 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 70%;
-    margin-left: 25px;
+    max-width: 90%;
+    margin: auto;
 }
 .stack{
     display: flex;
@@ -129,11 +131,11 @@ ul{
     justify-self: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1%;
+    margin: auto;
     /* padding: 35px; */
     padding-bottom: 0px;
     background-color: var( --mainColor);
-    width: 65em;
+    width: 80%;
     /* border-radius: 6px;
     box-shadow: 1px 1px 5px 1px rgba(75,81,86,1) */
 }
@@ -277,6 +279,23 @@ ul{
     .container{
       width: 300px;
     } */
+
+@media screen and (max-width: 1200px){
+    .greeting{
+        width:95%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(auto-fit, minmax(320px));
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'nav'
+            'portrait'
+            'about' 
+            'technologies'
+            ;
+    }
+}
+
 @media screen and (max-width: 800px){
     .greeting{
         width:95%;
@@ -320,6 +339,10 @@ ul{
         'p3'
         'social'   
     }
+    .p-summary {
+        max-width: 95%;
+        margin: auto;
+    }
 }
 @media screen and (max-width: 320px){
     .show-work {
@@ -333,6 +356,10 @@ ul{
         'p2'
         'p3'
         'social'   
+    }
+    .p-summary {
+        max-width: 95%;
+        margin: auto;
     }
 }
 
