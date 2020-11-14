@@ -310,6 +310,19 @@ ul{
             'technologies'
             ;
     }
+    .navigation{
+        grid-area: nav;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0%;
+        background-color: var(--secondaryColor);
+        /* padding: 5px; */
+        /* padding-bottom: 5px; */
+    }
+    .navigation a{
+        font-size: 11px;
+    }
 }
 @media screen and (max-width: 320px){
     .greeting{
