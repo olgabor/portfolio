@@ -1,6 +1,6 @@
 :root{
     --mainColor: rgba(242,246,248,1);
-    --secondaryColor: #CFEEFA;
+    --secondaryColor: #DBF3FA;
     --tertiaryColor: #7D9C9F;
     --mainText: #0c090b; 
     --secondaryText:darkslateblue; 
@@ -208,7 +208,7 @@ ul{
     margin: auto;
     max-width: 90%;
     padding: 15px 20px;
-    background: #DBF3FA;
+    background-color: var(--secondaryColor);
 }
 .social{
     background-color: var( --mainColor);
@@ -218,7 +218,7 @@ ul{
     margin: 0%;
     padding: 5px;
     padding-bottom: 5px;
-    background: #DBF3FA;
+    background-color: var(--secondaryColor);
     color:  #e3e3e4;
 }
 #social img{
@@ -330,12 +330,12 @@ ul{
         justify-content: space-around;
         align-items: center;
         margin: 0%;
-        background: #DBF3FA;
+        background-color: var(--secondaryColor);
         /* padding: 5px; */
         /* padding-bottom: 5px; */
     }
     a{
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 
